@@ -31,7 +31,7 @@ export default function SignUp(props) {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3005/register', {
+      const response = await fetch('https://utilityapi-byq0.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

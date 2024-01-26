@@ -11,6 +11,8 @@ export default function Dashboard() {
   const user = location.state?.user
 
   localStorage.setItem("name", JSON.stringify(user.name))
+  localStorage.setItem("username", JSON.stringify(user.username))
+  localStorage.setItem("email", JSON.stringify(user.email))
 
   console.log(user, 'users');
   return (

@@ -3,6 +3,11 @@ import { List, ListIcon, ListItem, Heading, Box, Text, HStack, Divider, Avatar, 
 import { NavLink } from "react-router-dom"
 
 const Sidebar = () => {
+
+
+  const username = JSON.parse(localStorage.getItem("username"))
+  const email = JSON.parse(localStorage.getItem("email"))
+
   return (
     <List  fontSize="1em" spacing={4} position={"relative"} height="100%">
         <ListItem>
@@ -36,8 +41,8 @@ const Sidebar = () => {
         </Avatar>
         <Box fontSize={"10px"}>
 
-        <Text>[Username]</Text>
-        <Text>[User email]</Text>
+        <Text>{username}</Text>
+        <Text>{email}</Text>
         
         </Box>
 
